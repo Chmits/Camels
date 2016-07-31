@@ -17,7 +17,7 @@ if($obj->authentifiate($username,$password))
 }
 else
 {
-	//connection failed!
+    header('Location:  ../index.php');      
 }
 
 
