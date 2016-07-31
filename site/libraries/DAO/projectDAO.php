@@ -1,0 +1,40 @@
+<?php
+
+include_once('Db.class.php');
+
+class ProjectDAO {
+
+	public static function insertProject($id_association_sw=0,$budget=0,$title=0,$document=0,$resume=0,$statut=0){
+
+		//$sql="INSERT INTO t_project (`id_assoc_sw`, `title_2`, `budget`, `document`, `description`, `status`) VALUES  ($id_association, '$title', $budget, '$document', '$description', '$statut')";
+
+		//$sql=" NSERT INTO `t_project` (`id_project`, `id_assoc_sw`, `title_2`, `budget`, `document`, `description`, `status`) VALUES (NULL, '1', 'zz', '22', 'zdz', 'dzd', 'zd')";
+		
+		$sql="INSERT INTO t_project (`id_association_sw`, `budget`, `title`, `document`,`resume`, `status`) VALUES ($id_association_sw,$budget, '$title', '$resume', '$document', 'status')";
+		
+		Db::open();
+	
+		Db::insertQuery($sql);
+	}
+	//recupère les projets
+	public static function getProjects($id){
+
+		$sql="SELECT * FROM `t_project` where id_association_sw=$id;";
+
+        $result = array();
+
+		Db::open();
+		echo "$sql";
+		exit();
+		echo "string1";
+		exit();
+		$result = Db::getRowList($sql);
+		echo "ok";
+		exit();
+
+
+        return $result ;
+	}
+}
+
+?>
