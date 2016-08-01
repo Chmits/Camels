@@ -13,7 +13,7 @@
   				<ul class="nav nav-tabs">
   				<li role="presentation" class="active"><a href="#">Accueil</a></li>
   				<li role="presentation"><a href="#">Profile</a></li>
-  				<li role="presentation"><a href="../libraries/DAO/projetctDAO.php">Projets</a></li>
+  				<li role="presentation"><a href="./project.php">Projets</a></li>
 </ul>
 			</div>
 		</nav>

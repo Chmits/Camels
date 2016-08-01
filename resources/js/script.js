@@ -12,7 +12,6 @@ function fact(n){
 	else return n*fact(n-1);
 }
 alert(x+"! =" +fact(x));
-*/
 
 
 function hour()
@@ -27,3 +26,17 @@ function hour()
 		alert("Bonne soirée!")
 }
 hour();
+*/
+
+
+var empty_object = {};
+var stooge ={
+	"first_name":"Mouné",
+	"last_name" : "Tayéhi",
+	display:function(){
+		document.writeln(this.first_name + " " + this["last_name"] +"<br>")
+	}
+}
+stooge.display();
+document.writeln(stooge.first_name + "<br>");
+document.writeln(stooge.last_name);

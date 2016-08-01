@@ -1,4 +1,7 @@
 HelloTeam
 ChmitsTest
+<<<<<<< HEAD
 
 hello camels
+=======
+>>>>>>> 47c71a91faa892e5c1e07ff95c85b6a092126a5e
