@@ -17,20 +17,17 @@ class ProjectDAO {
 		Db::insertQuery($sql);
 	}
 	//recupère les projets
-	public static function getProjects($id){
+	public static function getProjects(){
 
-		$sql="SELECT * FROM `t_project` where id_association_sw=$id;";
+		$sql="SELECT * FROM `t_project` ;";
 
         $result = array();
 
 		Db::open();
-		echo "$sql";
-		exit();
-		echo "string1";
-		exit();
+
+		
 		$result = Db::getRowList($sql);
-		echo "ok";
-		exit();
+		
 
 
         return $result ;

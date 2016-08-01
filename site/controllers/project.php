@@ -22,7 +22,7 @@ $result=$projectDao->getProjects($id_association);
 var_dump($result);
 
 
-include_once('./views/home/projet.php');
+//include_once('./views/home/projet.php');
 
 
 

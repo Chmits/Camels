@@ -8,12 +8,9 @@ Class Db {
 	public static function open(){
 		
 		if(!self::$dbh)
-		{
-			
+		   
 			self::$dbh = DbCon::getInstance();
-			echo "open";
-			exit();
-		}
+		
 			
 		
 	}
@@ -43,8 +40,10 @@ Class Db {
 		$list  = array();
 
 		$statement = self::$dbh->query($sql);
+		
 	
 		$statement->setFetchMode(PDO::FETCH_OBJ);
+		
 		
 		if(isset($statement)) 
 

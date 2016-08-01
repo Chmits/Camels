@@ -1,35 +1,38 @@
 <?php
 class DBCon
 {
-	private static $dbOb;
-	private $dbUser;
-	private $dbPass;
-	private $dbDSN;
+	public static $dbh;
 
-	private function __construct($dbDSN,$dbUser,$dbPass)
+	private static $dbOb;
+
+
+	private function __construct()
 	{
-		try
-		{
-			self::$dbOb= new PDO('mysql:dbname=web4innovation;host=vvv.dev','root','root');	
+
+		$dsn = 'mysql:dbname=test;host=127.0.0.1';
+		$user = 'root';
+		$password = 'root';
+
+		try {
+		    self::$dbh = new PDO($dsn, $user, $password);
+		} catch (PDOException $e) {
+		    echo 'Connexion échouée : ' . $e->getMessage();
 		}
-		catch(Exception $exception)
-		{
-			echo "Could not connect to Database";
-			die();
-		}
+			
 	}
 
 	public static function getInstance()
 	{
-		
-		if(!self::$dbOb)
-		{
-						self::$dbOb= new DBCon("mysql:dbname=web4innovation;host=vvv.dev","root","root");	
+
+		if(!self::$dbh){
+
+			new DbCon();
+
 		}
-		
-		var_dump(self::$dbOb);
-		exit();
-		return self::$dbOb;
+
+		return self::$dbh;
+
+
 	}
 	public static function close()
 	{
