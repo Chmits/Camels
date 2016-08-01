@@ -1,7 +1,5 @@
 HelloTeam
 ChmitsTest
-<<<<<<< HEAD
+/*Chams*/
+hey team c bon raka7t footer header w acceuil view w zedt sala7t el authentification wtaw bech nebda nekhdem fi khedmet el extraction de données mel BDD w espace projet :))
 
-hello camels
-=======
->>>>>>> 47c71a91faa892e5c1e07ff95c85b6a092126a5e

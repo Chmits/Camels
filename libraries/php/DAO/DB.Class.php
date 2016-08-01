@@ -29,10 +29,10 @@ class Db
 				//Log::addException(Log::ERROR,$ex,true);
 				return false;
 			}
-			$i=-1;
+			$i=0;
 			foreach ($statement as $row) {
 				$i+=1;
-				$list[i]=$row;
+				$list[$i]=$row;
 			}
 			return $list;
 		}
