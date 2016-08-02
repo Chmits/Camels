@@ -39,6 +39,7 @@ class Db
 		public static function insertQuery($sql)
 		{
 			if(empty($sql)) return false;
+			
 			try
 			{
 				self::$PDO->exec($sql);
