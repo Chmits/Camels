@@ -28,9 +28,8 @@
         <link rel="apple-touch-icon-precomposed" href="./libraries/assets/ico/apple-touch-icon-57-precomposed.png">
 
     </head>
-
+     
     <body style ="background-color:#cccccc;">
-
         <!-- Top content -->
         <div class="top-content">
         	
@@ -71,13 +70,14 @@
 			                        <button type="submit" class="btn">Sign in!</button>
 			                    </form>
 		                    </div>
+                    <?php if($nc=="t")  echo "<p class=\"bg-danger\"> verify your username or your password!</p>";?>
+
                         </div>
                     </div>
                 </div>
             </div>
             
         </div>
-
 
         <!-- Javascript -->
         <script src="./libraries/assets/js/jquery-1.11.1.min.js"></script>

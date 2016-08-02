@@ -1,15 +1,16 @@
 <?php
 
-include_once('DB.class.php');
+include_once('Db.class.php');
 
-class AssociationDAO {
+class ProjectDAO {
 
-	public static function insertAssociation($title=0,$logo=0,$decription=0,$website=0,$telephone=0,$adresse=0){
+	public static function insertAssociation($title=0,$logo,$decription,$website,$telephone,$adresse){
 
+//$sql=" NSERT INTO `t_project` (`id_project`, `id_assoc_sw`, `title_2`, `budget`, `document`, `description`, `status`) VALUES (NULL, '1', 'zz', '22', 'zdz', 'dzd', 'zd')";
 		
-		$sql="INSERT INTO `t_association_sw`(`title`, `logo`, `description`, `website`, `telephone`, `adresse`) VALUES ('$title', '$logo', '$description', '$website', $telephone,' $adresse');";
+		
 
-		//$sql="INSERT INTO `t_association_sw` (`title`, `logo`, `description`, `website`, `telephone`, `adresse`) VALUES (title, logo, description, website, 111, adresse);";
+		$sql="INSERT INTO `t_association_sw` (`title`, `logo`, `description`, `website`, `telephone`, `adresse`) VALUES ('title', 'logo', 'description', 'website', 'telephone', 'adresse')";
 		
 		Db::open();
 	
@@ -21,14 +22,12 @@ class AssociationDAO {
 	public static function getAssociation(){
 
 		$result = array();
-		$sql="SELECT * FROM `t_association_sw` ; ";
+		$sql="SELECT * FROM `t_association_sw`";
 
 
 		Db::open();
-
-
 		$result = Db::getRowList($sql);
-		
+
 		return $result;
 	}
 }

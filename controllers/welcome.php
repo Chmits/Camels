@@ -9,15 +9,17 @@ $obj= new t_login_DAO();
 if($obj->authentifiate($username,$password))
 {
 	session_start();
-	$_SESSION['username'] = $username;
-    $_SESSION['password'] = $password;
+	$_SESSION["username"] = $username;
+    $_SESSION['connected'] = "connected";
+    //$_SESSION['id'] = $obj->authentifiate($username,$password);
+
     //Here you are welcome 
-    header('Location: acceuil.php');      
+   header('Location: acceuil.php');      
 
 }
 else
 {
-    header('Location:  ../index.php');      
+    header('Location:  ../index.php?nc=t');      
 }
 
 

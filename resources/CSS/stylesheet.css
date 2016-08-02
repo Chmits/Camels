@@ -1,0 +1,50 @@
+body {
+	background: url('../images/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#logo img{
+	float : left;
+	margin-top: -60px ;
+	margin-left: 15px;
+	width:150px;
+	height: 170px;
+
+
+}
+/*.nav-tabs .navbar .container a{
+	float: right;
+	margin : 15px;
+	text-align: center;
+	align-items: center;
+}*/
+
+li{
+	display: inline;
+	margin : 0px 5px 0px 5px;
+}
+
+
+h1{
+	text-align: center;
+	padding-top: 20%;
+	color: white;
+}
+ul.nav.nav-tabs>li>a
+{
+	text-decoration: none;
+	color: blue;
+	float: right;
+	margin : 15px;
+	text-align: center;
+	align-items: center;
+}
+#logo.img nav {
+	display: inline-block;
+}
+a:hover{
+	color: blue;
+}
