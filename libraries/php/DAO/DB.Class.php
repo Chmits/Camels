@@ -32,13 +32,14 @@ class Db
 			$i=-1;
 			foreach ($statement as $row) {
 				$i+=1;
-				$list[i]=$row;
+				$list[$i]=$row;
 			}
 			return $list;
 		}
 		public static function insertQuery($sql)
 		{
 			if(empty($sql)) return false;
+			
 			try
 			{
 				self::$PDO->exec($sql);

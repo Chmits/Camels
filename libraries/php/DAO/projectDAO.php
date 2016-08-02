@@ -19,9 +19,10 @@ class ProjectDAO {
 	//recupère les projets
 	public static function getProjects(){
 
+		$result = array();
 		$sql="SELECT * FROM `t_project` ;";
 
-        $result = array();
+        
 
 		Db::open();
 
