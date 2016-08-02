@@ -11,8 +11,10 @@ if($obj->authentifiate($username,$password))
 	session_start();
 	$_SESSION["username"] = $username;
     $_SESSION['connected'] = "connected";
-    //$_SESSION['id'] = $obj->authentifiate($username,$password);
-
+    $list= $obj->role($username,$password);
+    $ok=$list[1];
+    $_SESSION['id'] = $ok->id_login;
+    $_SESSION['role'] = $ok->role;
     //Here you are welcome 
    header('Location: acceuil.php');      
 

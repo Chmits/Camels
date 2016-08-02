@@ -16,4 +16,18 @@
                 </div>
             </div>
         </div>
-    </section>
+</section>
+
+    <!-- jQuery -->
+    <script src="../libraries/acceuil_needs/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../libraries/acceuil_needs/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="../libraries/acceuil_needs/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="../libraries/acceuil_needs/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../libraries/acceuil_needs/js/creative.min.js"></script>
