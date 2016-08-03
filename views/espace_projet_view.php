@@ -60,11 +60,13 @@
             echo "<div class=\"row\">"; 
                 echo "<div class=\"col-md-4 portfolio-item\">";
                     echo "<a href=\"#\">";
-                    echo "<img class=\"img-responsive\" src=\"../resources/images/prj1.jpg\" alt=\"\" style=\"width: 400px;height: 160px\">";
+                    echo "<img class=\"img-responsive\" src=\"../resources/images/prj"?><?php echo rand(1,6); ?><?php echo ".jpg\" alt=\"\" style=\"width: 400px;height: 160px\">";
                     echo "</a>";
                     echo "<h3>";
                      //<a href=\"project_show.php">".$reg->title."</a> 
                     echo "</h3>";
+                    echo " <h2>";echo "$reg->title</h2>";
+
                     echo "<p>".$reg->resume."...</p>";
                     //echo " <a href=\"#\" class=\"btn btn-primary btn-xl page-scroll\">Plus d'information !</a>";
                     ?>
@@ -77,7 +79,7 @@
                       <input type="hidden" value="<?php echo $reg->document ?>" name="document"></input>
                       <input type="hidden" value="<?php echo $reg->resume ?>" name="resume"></input>
 
-                      <button type="submit" class="btn btn-primary btn-xl page-scroll"><?php echo $reg->title ?></button> 
+                      <button type="submit" class="btn btn-info">+</button> 
                     </form>
                     <?php
                     echo "</div>";    
