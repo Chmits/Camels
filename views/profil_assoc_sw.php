@@ -61,7 +61,7 @@
 				<hr>
 				
 				<div >
-					<p><?php echo $description?></p>
+					<p style="text-align: center;"><?php echo $description?></p>
 				</div><!-- col-lg-6 -->
 				
 				
@@ -76,7 +76,7 @@
     	</aside><!-- section -->
 		
 		
-		<!-- ==== TEAM MEMBERS ==== -->
+	<?php	/* <!-- ==== TEAM MEMBERS ==== -->
 		<div class="container" id="team" name="team">
 		<br>
 			<div class="row white centered">
@@ -130,19 +130,14 @@
 				
 			</div><!-- row -->
 		</div><!-- container -->
-  		
 
-		
-		
-		
-		
 		
 		<!-- ==== SECTION DIVIDER6 ==== -->
 		<aside style="background: url('../resources/profil_needs/assets/img/bg/reunion.jpg');
    														 height: 600px;
    														 background-repeat: no-repeat;
     											background-size: 100%;">
-    	</aside><!-- section -->
+    	</aside><!-- section -->*/ ?>
 		
 		<div class="container" id="contact" name="contact">
 			<div class="row">

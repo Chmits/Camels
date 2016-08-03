@@ -25,13 +25,16 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
        <?php  include_once('../views/links.php'); ?>
+       <?php  include_once('../views/links2.php'); ?>
+
+
 
 </head>
 
 <body id="page-top" >
 
     <!-- Navigation -->
-    <?php  include_once('../views/menu_view.php'); ?>
+    <?php  include_once('../views/header1_view.php'); ?>
   
 
     <!-- Page Content -->
@@ -91,17 +94,14 @@
                     </form>
                     <form method="post" action="deleteProject.php">
                       <input type="hidden" value="<?php echo $reg->id_project ?>" name="id"></input>
-                      <button type="submit" class="btn btn-danger"">x</button>
+                      <button type="submit" class="btn btn-danger">x</button>
                     </form>
                     </td>
                     </tr>
                     </table>
                    
                     <?php
-                    echo "</div>";    
-
-                   
-
+                    echo "</div>";   
               if($i%3 == 0)
                     echo "</div>";
                 }
@@ -110,9 +110,11 @@
                 
                  ?>
                 
-
+</div>
     
         <?php  include_once('../views/footer_view.php'); ?>
+        <?php  include_once('../views/script1.php'); ?>
+
     <!-- /.container -->
 
     <!-- jQuery -->
