@@ -43,18 +43,50 @@ class Db
 			try
 			{
 				self::$PDO->exec($sql);
-				return self::$PDO->lastInsertID();
+				return self::$dbh->lastInsertID();
 			}catch(PDOException $ex)
 			{
 				echo "SQL error! : ".$ex->getMessage();
 				return false;
 			}
 		}
+
+		public static function updateQuery($sql){
+			if(empty($sql)) return false;
+			try{
+				self::$dbh->exec($sql);
+			}
+			catch(PDOException $ex)
+			{
+				echo "error !!".$ex->getMessage();
+				return false;
+			}
+					
+	    }
+
+	    public static function deleteQuery($sql)
+	    {
+	    	if(empty($sql)) return false;
+			try{
+				self::$dbh->exec($sql);
+			}
+			catch(PDOException $ex)
+			{
+				echo "Error !!".$ex->getMessage();
+				return false;
+			}
+
+
+	    }
+
+
 		public static function close()
 		{
 			self::$dbh=null;
 			DbCon::close();
 		}
+
+		
 
 }
  ?>
