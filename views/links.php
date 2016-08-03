@@ -1,8 +1,9 @@
-     <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta charset="utf-8">
 
     <!-- Bootstrap Core CSS -->
     <link href="../libraries/acceuil_needs/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
