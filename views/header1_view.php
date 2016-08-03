@@ -28,11 +28,20 @@
                     
                                         <li>
                         <a class="page-scroll" href="#partenaires">Nos partenaires</a>
-                    </li>   <li>
-                        <a class="page-scroll" href="#contact">S'inscrire</a>
-                    </li>    <li>
+                    </li>   
+                    <?php if( $con == "connected")
+                            {  ?>
+                            <li>
+                        <a class="page-scroll" href="../controllers/logout.php">Se deconnecter</a>
+                    </li>
+                    <?php } else { ?>
+                     <li>
+                        <a class="page-scroll" href="../controllers/login.php">S'inscrire</a>
+                    </li>  
+                        <li>
                         <a class="page-scroll" href="../controllers/login.php">S'authentifier</a>
                     </li>  
+                    <?php } ?>
               
                  </ul>
             </div>

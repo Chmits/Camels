@@ -20,7 +20,4 @@ $projectDao = new  ProjectDAO();
 
 exit();
 header('Location:  ../controllers/projInsert.php');      
-
-
-
 ?>
