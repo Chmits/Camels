@@ -11,7 +11,9 @@ class DbCon
 
 		try {
 		    self::$dbh = new PDO($dsn, $user, $password);
-		} catch (PDOException $e) {
+		    self::$dbh->exec("SET NAMES 'UTF8'");
+
+		    		} catch (PDOException $e) {
 		    echo 'Connexion échouée : ' . $e->getMessage();
 		}
 	}
