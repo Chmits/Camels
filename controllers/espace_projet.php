@@ -6,7 +6,6 @@
 	 //include_once('../views/footer_view.php'); 
 	 $projectDao = new  ProjectDAO();
 	 $id_association=$_SESSION["id"];
-	 echo "$id_association";
 	 $nom="Espace Projet";
 
 

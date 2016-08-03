@@ -5,9 +5,13 @@ $username=$_POST['username'];
 $password=md5($_POST['password']);
 
 $obj= new t_login_DAO();
+session_start();
+if( $_SESSION['connected'] == "connected")
+  {
 
-
-if($obj->authentifiate($username,$password))
+      header('Location: ../controllers/profil.php');   
+  }
+else if($obj->authentifiate($username,$password))
 {
 	session_start();
 	$_SESSION["username"] = $username;

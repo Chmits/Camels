@@ -18,7 +18,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a  class="page-scroll" href="#">Accueil</a>
+                        <a  class="page-scroll" href="../controllers/acceuil.php">Accueil</a>
                     </li>
                  
                     <li>
@@ -26,10 +26,10 @@
                     </li>
                     
                    <li>
-                        <a class="page-scroll" href="#"></a>
+                        <a class="page-scroll" href=""></a>
                     </li>      
                       <li>
-                        <a class="page-scroll" href="#">Soumettre un projet</a>
+                        <a class="page-scroll" href="../controllers/projInsert.php">Soumettre un projet</a>
                     </li>   
                     <li>
                         <a class="page-scroll" href="../controllers/logout.php">Se déconnecter</a>

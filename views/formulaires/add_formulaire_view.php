@@ -8,7 +8,7 @@
 <body>
 
 
-<form class="form-horizontal">
+<form class="form-horizontal" method="post" action="../controllers/projectInsert.php">
 <!-- Form Name -->
 
 
@@ -19,7 +19,7 @@
 <div class="form-group" style="margin-top:150px">
   <label class="col-md-4 control-label" for="textinput"></label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="Nom du projet" class="form-control input-md" required="">
+  <input id="textinput" name="title" type="text" placeholder="Nom du projet" class="form-control input-md" required="">
 
   </div>
 </div>
@@ -28,7 +28,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput"></label>  
   <div class="col-md-4">
- <input id="textinput" name="textinput" type="text" placeholder="Budget estimé pour la réalisation du projet!" class="form-control input-md" required=""> 
+ <input id="textinput" name="budget" type="text" placeholder="Budget estimé pour la réalisation du projet!" class="form-control input-md" required=""> 
 </div>
     
   </div>
