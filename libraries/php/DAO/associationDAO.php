@@ -4,7 +4,7 @@ include_once('Db.class.php');
 
 class ProjectDAO {
 
-	public static function insertAssociation($title=0,$logo,$decription,$website,$telephone,$adresse){
+	public static function insertAssociation($title=0,$logo=0,$decription=0,$website=0,$telephone=0,$adresse=0){
 
 //$sql=" NSERT INTO `t_project` (`id_project`, `id_assoc_sw`, `title_2`, `budget`, `document`, `description`, `status`) VALUES (NULL, '1', 'zz', '22', 'zdz', 'dzd', 'zd')";
 		

@@ -12,11 +12,12 @@ $statut= htmlspecialchars($_POST['statut']);
 
 $budget=$_POST['budget'];
 $id_association=1;
+$id_team=1;
 
 $projectDao = new  ProjectDAO();
 
 
-$projectDao->insertProject($id_association,$title,$budget,$document,$resume,$statut);
+$projectDao->insertProject($id_association,$id_team,$title,$budget,$document,$resume,$statut);
 
 
 
