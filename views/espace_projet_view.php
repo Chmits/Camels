@@ -3,7 +3,7 @@
 
 <head>
 
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -36,21 +36,71 @@
   
 
     <!-- Page Content -->
-    <div class="container">
+    <div id="tes" class="container">
 
         <!-- Page Header -->
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Espace Projet
-                    <strong><?php if(isset($_SESSION["username"])) echo $_SESSION["username"]; ?><strong>
+                    <strong><?php if(isset($_SESSION["username"])) echo $_SESSION["username"]; ?></strong>
                 </h1>
             </div>
         </div>
+
+
+
+<?php
+        $i=0;
+        $size=count($result);
+        //var_dump($result[1]);
+        foreach ($result as $reg)
+        {
+            $i++;
+            if(($i%3)-1 == 0)
+            echo "<div class=\"row\">"; 
+                echo "<div class=\"col-md-4 portfolio-item\">";
+                    echo "<a href=\"#\">";
+                    echo "<img class=\"img-responsive\" src=\"../resources/images/prj1.jpg\" alt=\"\" style=\"width: 400px;height: 160px\">";
+                    echo "</a>";
+                    echo "<h3>";
+                     //<a href=\"project_show.php">".$reg->title."</a> 
+                    echo "</h3>";
+                    echo "<p>".$reg->resume."...</p>";
+                    //echo " <a href=\"#\" class=\"btn btn-primary btn-xl page-scroll\">Plus d'information !</a>";
+                    ?>
+                    <form method="post" action="project_show.php">
+                      <input type="hidden" value="<?php echo $reg->title ?>" name="title"></input>
+                      <input type="hidden" value="<?php echo $reg->id_association_sw ?>" name="id_association_sw"></input>
+                      <input type="hidden" value="<?php echo $reg->id_team ?>" name="id_team"></input>
+                      <input type="hidden" value="<?php echo $reg->budget ?>" name="budget"></input>
+                      <input type="hidden" value="<?php echo $reg->status ?>" name="status"></input>
+                      <input type="hidden" value="<?php echo $reg->document ?>" name="document"></input>
+                      <input type="hidden" value="<?php echo $reg->resume ?>" name="resume"></input>
+
+                      <button type="submit" class="btn btn-primary btn-xl page-scroll"><?php echo $reg->title ?></button> 
+                    </form>
+                    <?php
+                    echo "</div>";    
+
+                   
+
+              if($i%3 == 0)
+            echo "</div>";
+        }
+        if($i%3 != 0)
+            echo "</div>";
+        
+ ?>
+        
+
+
+    </div>
         <!-- /.row -->
 
 
         <!-- Projects Row -->
-        <div class="row">
+
+       <!-- <div class="row">
             <div class="col-md-4 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="../resources/images/prj1.jpg" alt="" style="width: 400px;height: 160px">
@@ -82,16 +132,14 @@
                 <p>Ce projet a pour but de présenter Android Studio, le nouvel IDE de Google, mais pas seulement. On verra comment l'installer, le configurer et créer un premier ...</p>
             </div>
         </div>
-        <!-- /.row -->
-
-        
+   
 
 
 
-        <!-- /.row -->
 
-    </div>
+        -->
 
+    
         <?php  include_once('../views/footer_view.php'); ?>
     <!-- /.container -->
 

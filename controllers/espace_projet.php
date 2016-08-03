@@ -6,16 +6,17 @@
 	 //include_once('../views/footer_view.php'); 
 	 $projectDao = new  ProjectDAO();
 	 $id_association=$_SESSION["id"];
-	 if($_SESSION["id"]=="association_swisse")
+
+	 if($_SESSION["role"]=="association")
 	 {
 	 	 $result=$projectDao->getProjects($id_association);
-
+	 	 //var_dump($result);exit();
+	 	 
 	 }
 	
-	 //var_dump($result);
 	 include_once('../views/espace_projet_view.php');
  }
  else
-    header('Location:  ../index.php?nc=t');      
+    header('Location:  ../index.php');      
 
 ?>
