@@ -3,15 +3,15 @@
 include_once('Db.class.php');
 
 
-class associationDAO {
+class AssociationDAO {
 
 	public static function insertAssociation($title=0,$logo=0,$decription=0,$website=0,$telephone=0,$adresse=0){		
 
 		$sql="INSERT INTO `t_association_sw` (`title`, `logo`, `description`, `website`, `telephone`, `adresse`) VALUES ('$title', '$logo', '$description', '$website', '$telephone', '$adresse')";
 		
-		Db::open();
+		DB::open();
 	
-		Db::insertQuery($sql);
+		DB::insertQuery($sql);
 		
 	}
 
