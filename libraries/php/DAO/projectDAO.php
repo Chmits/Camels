@@ -2,7 +2,7 @@
 
 include_once('DB.Class.php');
 
-class DAO {
+class projectDAO {
 
 	public static function insertProject($id_association_sw=0,$id_team=0,$budget=0,$title=0,$document=0,$resume=0,$statut=0){
 
@@ -43,8 +43,9 @@ class DAO {
         DB::close();
 
 	}
-	public static function deleteProject($id_association_sw=0,$id_team=0,$budget=0,$title=0,$document=0,$resume=0,$statut=0,$id){
-		$sql="DELETE * FROM `t_project` WHERE `t_project`.`id_project` = $id;";
+	public static function deleteProject($id=0){
+		$sql="DELETE FROM `t_project` WHERE  `id_project` = $id;";
+		
 		DB::open();
         DB::deleteQuery($sql);
         DB::close();

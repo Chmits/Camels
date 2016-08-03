@@ -66,17 +66,19 @@ class Db
 
 	    public static function deleteQuery($sql)
 	    {
+
 	    	if(empty($sql)) return false;
 			try{
-				self::$dbh->exec($sql);
-			}
+				echo "i'am here! and : $sql";
+				$count =self::$dbh->exec($sql);
+				echo "$count";
+
+			   }
 			catch(PDOException $ex)
 			{
 				echo "Error !!".$ex->getMessage();
 				return false;
 			}
-
-
 	    }
 
 
