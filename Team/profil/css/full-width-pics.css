@@ -1,0 +1,95 @@
+/*
+ * Start Bootstrap - Full Width Pics (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+.headback{
+	background: url("../img/O6XM4L0.jpg") no-repeat center center scroll;
+    background-size: 100%;
+}
+.table-user-information > tbody > tr {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.table-user-information > tbody > tr:first-child {
+    border-top: 0;
+}
+
+
+.table-user-information > tbody > tr > td {
+    border-top: 0;
+}
+
+.image-bg-fixed-height {
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.image-bg-fluid-height { padding: 100px 0;
+	
+	
+}
+
+.image-bg-fixed-height1 {
+
+	background: url("../img/Brand-experience-12.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+.image-bg-fixed-height2 {
+	background-image: url("../img/entreprise-creation-projet.jpg");
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.img-center {
+	margin: 0 auto;
+}
+
+section {
+    padding: 75px 0;
+}
+
+.section-heading {
+    margin: 30px 0;
+    font-size: 4em;
+}
+
+.section-lead {
+    margin: 30px 0;
+}
+
+.section-paragraph {
+    margin: 30px 0;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+@media(max-width:768px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .section-heading {
+        font-size: 2em;
+    }
+}
+hr 
+{
+	
+width: 80%;
+height: 20px;
+
+}
