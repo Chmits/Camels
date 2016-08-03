@@ -24,9 +24,16 @@ b,strong{font-weight:inherit}b,strong{font-weight:bolder}dfn{font-style:italic}h
 html { width: 100%; height:100%; overflow:hidden; }
 
 body { 
+<<<<<<< HEAD:Team/acceuil/css/normalize.css
 	     width: 100%;
 	     height:100%;
 	    font-family: 'Open Sans', sans-serif;
+=======
+	width: 100%;
+	height:100%;
+	background-size:cover !important;
+	font-family: 'Open Sans', sans-serif;
+>>>>>>> 5c4065918bd7517d29db7a668e61bab915e947d4:resources/acceuil_needs/css/normalize.css
 		background-image: url("../img/intro-bg.jpg");
 		background-repeat: no-repeat;
 		background-size: 100%;

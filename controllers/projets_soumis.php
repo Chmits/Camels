@@ -3,9 +3,9 @@
   if( $_SESSION['connected'] == "connected")
   {
 	 include_once('../libraries/php/DAO/projectDAO.php');
-	 //include_once('../views/footer_view.php'); 
 	 $projectDao = new  ProjectDAO();
 	 $id_association=$_SESSION["id"];
+	 $nom="Projets soumis";
 
 	 if($_SESSION["role"]=="association")
 	 {
