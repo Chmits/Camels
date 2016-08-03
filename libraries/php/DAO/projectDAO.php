@@ -1,6 +1,6 @@
 <?php
 
-include_once('Db.class.php');
+include_once('DB.Class.php');
 
 class DAO {
 
