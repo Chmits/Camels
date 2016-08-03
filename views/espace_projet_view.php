@@ -70,7 +70,11 @@
                     echo "<p>".$reg->resume."...</p>";
                     //echo " <a href=\"#\" class=\"btn btn-primary btn-xl page-scroll\">Plus d'information !</a>";
                     ?>
+                    <table>
+                    <tr>
+                    <td>
                     <form method="post" action="project_show.php">
+                      <input type="hidden" value="<?php echo $reg->id ?>" name="id"></input>
                       <input type="hidden" value="<?php echo $reg->title ?>" name="title"></input>
                       <input type="hidden" value="<?php echo $reg->id_association_sw ?>" name="id_association_sw"></input>
                       <input type="hidden" value="<?php echo $reg->id_team ?>" name="id_team"></input>
@@ -78,9 +82,22 @@
                       <input type="hidden" value="<?php echo $reg->status ?>" name="status"></input>
                       <input type="hidden" value="<?php echo $reg->document ?>" name="document"></input>
                       <input type="hidden" value="<?php echo $reg->resume ?>" name="resume"></input>
+                      <input type="hidden" value="<?php echo $reg->id_project ?>" name="id"></input>
 
-                      <button type="submit" class="btn btn-info">+</button> 
+
+
+                      <button type="submit" class="btn btn-info">+</button>
+                      </form></td>
+                      <td>
                     </form>
+                    <form method="post" action="deleteProject.php">
+                      <input type="hidden" value="<?php echo $reg->id_project ?>" name="id"></input>
+                      <button type="submit" class="btn btn-danger"">x</button>
+                    </form>
+                    </td>
+                    </tr>
+                    </table>
+                   
                     <?php
                     echo "</div>";    
 
