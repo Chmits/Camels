@@ -1,7 +1,11 @@
 <?php
 
+  session_start();
+  if( $_SESSION['connected'] == "connected")
   include_once('../views/acceuil/acceuil_view.php');
-  //ELSE redirect to login
+  else
+  header('Location:  ../index.php');      
+
 
 
 

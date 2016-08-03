@@ -20,7 +20,7 @@ class Db
 			$statement = null;
 			try
 			{
-				echo "$sql";
+				//echo "$sql";
 				$statement=self::$dbh->query($sql);
 				$res=$statement->setFetchMode(PDO::FETCH_OBJ);
 			}catch(PDOException $ex)
