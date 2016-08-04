@@ -180,7 +180,7 @@
 
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com" style="color: white;">camels@ensi-uma.tn</a></p>
+                    <p><a href="mailto:your-email@your-domain.com" style="color: white;">camels@camels.tn</a></p>
                 </div>
     <!--       <ul class="list-inline" >
 <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
