@@ -1,5 +1,6 @@
 <?php
 include_once('./libraries/php/DAO/association_tunDAO.php');
+include_once('./views/formulaires/add_student_formulaire.php');
 
 $first_name= htmlspecialchars($_POST['first_name']);
 
