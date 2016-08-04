@@ -21,6 +21,6 @@
 	 include_once('../views/espace_projet_view.php');
  }
  else
-    header('Location:  ../index.php');      
+    header('Location:  ../controllers/acceuil.php');      
 
 ?>

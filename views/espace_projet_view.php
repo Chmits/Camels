@@ -30,12 +30,13 @@
 
 
 </head>
+<!-- Navigation -->
+    <?php  include_once('../views/header2_view.php'); ?>
 
 <body id="page-top" >
-            <?php include_once('../views/header_view.php');?>
+    <?php include_once('../views/header_view.php');?>
 
-    <!-- Navigation -->
-    <?php  include_once('../views/header5_view.php'); ?>
+    
   
 
     <!-- Page Content -->
@@ -90,7 +91,22 @@
 
 
 
-                       <?php if($_SESSION['role']=="association") { ?> <button type="submit" class="btn btn-info">+</button><?php  }
+                       <?php if($_SESSION['role']=="association") { ?> 
+
+                       <form method="post" action="project_show.php">
+                      <input type="hidden" value="<?php echo $reg->id ?>" name="id"></input>
+                      <input type="hidden" value="<?php echo $reg->title ?>" name="title"></input>
+                      <input type="hidden" value="<?php echo $reg->id_association_sw ?>" name="id_association_sw"></input>
+                      <input type="hidden" value="<?php echo $reg->id_team ?>" name="id_team"></input>
+                      <input type="hidden" value="<?php echo $reg->budget ?>" name="budget"></input>
+                      <input type="hidden" value="<?php echo $reg->status ?>" name="status"></input>
+                      <input type="hidden" value="<?php echo $reg->document ?>" name="document"></input>
+                      <input type="hidden" value="<?php echo $reg->resume ?>" name="resume"></input>
+                      <input type="hidden" value="<?php echo $reg->id_project ?>" name="id"></input>
+                       <button type="submit" class="btn btn-info">+</button>
+                       </form>
+
+                       <?php  }
                        ?>
                       </form></td>
                       <td>

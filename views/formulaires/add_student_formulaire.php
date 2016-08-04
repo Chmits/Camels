@@ -6,11 +6,13 @@
     
     
     <link rel="stylesheet" href="css/normalize.css">
-
    
-        <script src="js/prefixfree.min.js"></script>
-        <script src="validator.js"></script>
+      <script src="../resources/js/prefixfree.min.js"></script>
+      <script src="../resources/acceuil_needs/validator.js"></script>
 
+
+
+         <?php  include_once('../views/header6.php'); ?>
 
     
   </head>
@@ -33,8 +35,8 @@
     </form>
 </div>
     
-        <script src="js/index.js"></script>
-        <script src="validator.js"></script>
+        <script src="../resources/js/index.js"></script>
+        <script src="../resources/acceuil_needs/validator.js"></script>
 
     
     

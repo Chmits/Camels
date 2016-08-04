@@ -12,6 +12,8 @@
   	$resume=$_POST["resume"];
   	$status=$_POST["status"];
   	$document=$_POST["document"];
+    $title=$_POST["title"];
+
 
     include_once('../views/show_project/show_project.php');
 

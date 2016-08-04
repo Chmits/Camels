@@ -7,14 +7,18 @@ include_once('../libraries/php/DAO/projectDAO.php');
   session_start();
   if( $_SESSION['connected'] == "connected")
   {
-  	  $id=$_POST["id"]; 
+  	  if (isset($_POST["id"])) $id=$_POST["id"]; 
+      if(isset($_GET["id"])  )   $id=$_GET["id"]; 
+
+
       $projectDao = new  ProjectDAO();
+     
       $projectDao->deleteProject($id);
     header('Location:  espace_projet.php');      
 
   }
     else
-    header('Location:  ../index.php');      
+    header('Location:  ../controllers/acceuil.php');      
 
 
 echo "i'm here!";

@@ -181,7 +181,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-	 <?php  include_once('../views/script1.php'); ?>
+   <?php include_once('../views/script.php') ?>
+       <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 
 	<script type="text/javascript" src="../resources/profil_needs/assets/js/bootstrap.min.js"></script>
