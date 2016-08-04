@@ -66,17 +66,7 @@
   </div>
 
 </div>-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="selectbasic"></label>
-  <div class="col-md-4">
-    <select id="selectbasic" name="soumis" class="form-control">
-    <option >Votre projet sera soumis par défaut</option>
-      <option value="Soumis" selected="selected">Soumis</option>
-      <option value="non soumis">Non soumis</option>
-    </select>
-  </div>
 
-</div>
     
   </div>
 </div>-->
@@ -90,12 +80,25 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="button1id"></label>
   <div class="col-md-8">
+  
     <button id="button1id" name="button1id" class="btn btn-success">Envoyer</button>
-    <button id="button2id" name="button2id" class="btn btn-danger">Annuler</button>
+    <button id="button2id" name="button2id" class="btn btn-danger" onclick="f();">Annuler</button>
   </div>
 </div>
 
 </form>
+<script type="text/javascript">
+    function f()
+    {
+      alert("projet inserer!");
+
+
+    }
+       <?php $i=0; if(isset($_GET["ins"])) $i=1; ?>
+          if(<?php echo "$i";?>==1)
+          f();
+
+  </script>
 <footer>
 <?php include_once('../views/footer_view.php'); ?>
 

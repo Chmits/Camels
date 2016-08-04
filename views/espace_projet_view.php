@@ -111,9 +111,15 @@
                       </form></td>
                       <td>
                     </form>
+                    <script type="text/javascript">
+                      function ok()
+                      {
+                        res=confirm('ok?');
+                      }
+                    </script>
                     <form method="post" action="deleteProject.php">
                       <input type="hidden" value="<?php echo $reg->id_project ?>" name="id"></input>
-                      <?php if($_SESSION['role']=="association") { ?><button type="submit" class="btn btn-danger">x</button><?php  }?>
+                      <?php if($_SESSION['role']=="association") { ?><button type="submit" class="btn btn-danger" onclick="ok();">x</button><?php  }?>
                     </form>
                     </td>
                     </tr>

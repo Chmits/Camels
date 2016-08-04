@@ -60,43 +60,36 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-8 text-center">
                     <div class="service-box">
                         <img src="../resources/acceuil_needs/img/ensi.png" style="width: 100px;height:100px">
                          <h3>ENSI Junior Entreprise</h3>
                         <p class="text-muted"><a src="http://ensi-junior-entreprise.com/">
-                        website: ensi-junior-entreprise.com </a></p>
+                        ensi-junior-entreprise.com </a></p>
          
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-8 text-center">
                     <div class="service-box">
                         <img src="../resources/acceuil_needs/img/eniso.png" style="width: 200px;height:100px">
                         <h3>ENISO Junior Entreprise</h3>
                         <p class="text-muted"><a src="http://jeeniso.com//">
-                        website: www.jeeniso.com </a></p>
+                        www.jeeniso.com </a></p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-8 text-center">
                     <div class="service-box">
                         <img src="../resources/acceuil_needs/img/esprit.png" style="width: 150px;height:100px">
                         <h3>ESPRIT Junior Entreprise</h3>
                         <p class="text-muted"><a src="http://jeeniso.com//">
-                        website: www.esprit.com </a></p>
+                        www.esprit.com </a></p>
                     </div>
                 </div>
                 <style type="text/css">
                 a{color: purple;text-decoration: none;}
                 </style>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img src="../resources/acceuil_needs/img/tunes.jpg" style="width: 150px;height:100px">
-                        <h3>TUNES</h3>
-                        <p class="text-muted"><a src="http://tunes.epfl.ch/">
-                        website: www.tunes.epfl.ch </a></p>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </section>
