@@ -18,17 +18,19 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
                     <li>
-                        <a  class="page-scroll" href="#page-top">Accueil</a>
+                        <a  class="page-scroll" href="../controllers/acceuil.php">Accueil</a>
                     </li>
                  
                     <li>
-                        <a class="page-scroll" href="#about">Qui sommes-nous</a>
+                        <a class="page-scroll" href="../controllers/projets_soumis.php">Espace projets</a>
                     </li>
-                    
-                                        <li>
-                        <a class="page-scroll" href="#partenaires">Nos partenaires</a>
-                    </li>   
+                     <li>
+                        <a class="page-scroll" href="../controllers/espace_etudiant.php">Nos etudiants</a>
+                    </li>
                     <?php if( $con == "connected")
                             {  ?>
                              <li>

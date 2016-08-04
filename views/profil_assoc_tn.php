@@ -38,11 +38,11 @@
   
 
 
-         <?php  include_once('../views/header2_view.php'); ?>
+         <?php  include_once('../views/header3.php'); ?>
 
   
 		<!-- ==== HEADERWRAP ==== -->
-	    <div id="headerwrap" id="home" name="home" style="background: url('../resources/profil_needs/assets/img/bg/divider3.jpg') no-repeat center top;">
+	    <div id="headerwrap" id="home" name="home" style="background: url('../resources/images/logos/ok3.jpg') no-repeat center top;">
 			<header class="clearfix">
 	  		 	
 	  		</header>	    
@@ -56,7 +56,7 @@
 			<div class="row white">
 			<br>
 			<h1 class="centered"><?php echo "$title"; ?></h1>
-			<CENTER> <IMG SRC=" <?php echo $logo ?> "/> </center>
+			<CENTER> <IMG SRC=" <?php if($id_association == 1){?> ../resources/images/logos/ensi.png<?php }?>"/> </center>
 				<h1 class="centered">A propos notre association </h1>
 				<hr>
 				
@@ -148,10 +148,10 @@
 				<br>
 				<div class="col-lg-4">
 					<h3>Contact Information</h3>
-					<p><span class="icon icon-phone"></span> <?php echo $telephone ?> <br/>
+					<p>
+						<span class="icon icon-phone"></span> <?php echo $telephone ?> <br/>
 						<span class="icon icon-mobile"></span>  <?php echo $telephone ?> <br/>
-						
-						<span class="icon icon-facebook"></span> <a href="#"> facebook </a> <br/>
+												<span class="icon icon-facebook"></span> <a href="#"> facebook </a> <br/>
 					</p>
 				</div><!-- col -->
 				

@@ -3,6 +3,7 @@
   session_start();
   if( $_SESSION['connected'] == "connected")
   {
+    $con="connected";
   	$title=$_POST["title"];
     $id=$_POST["id"];
   	$id_team=$_POST["id_team"];
@@ -11,11 +12,10 @@
   	$resume=$_POST["resume"];
   	$status=$_POST["status"];
   	$document=$_POST["document"];
-    include_once('../views/show_project.php');
-
+    //include_once('../views/show_project.php');
 
   }
    else
-    header('Location:  ../index.php');      
+    header('Location:  ../controllers/acceuil.php');      
 
 ?>

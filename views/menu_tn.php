@@ -1,6 +1,5 @@
-   
    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" >
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -19,32 +18,25 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a  class="page-scroll" href="#page-top">Accueil</a>
+                        <a  class="page-scroll" href="../controllers/acceuil.php">Accueil</a>
                     </li>
                  
                     <li>
-                        <a class="page-scroll" href="#about">Qui sommes-nous</a>
+                        <a class="page-scroll" href="../controllers/projets_soumis.php">Espace projets</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="../controllers/espace_etudiant.php">Nos etudiants</a>
                     </li>
                     
-                                        <li>
-                        <a class="page-scroll" href="#partenaires">Nos partenaires</a>
+                   <li>
+                        <a class="page-scroll" href=""></a>
+                    </li>      
+                      <li>
+                        <a class="page-scroll" href="../controllers/projInsert.php">Soumettre un projet</a>
                     </li>   
-                    <?php if( $con == "connected")
-                            {  ?>
-                             <li>
-                        <a class="page-scroll" href="../controllers/profil.php">Profil</a>
-                    </li>
-                            <li>
-                        <a class="page-scroll" href="../controllers/logout.php">Se deconnecter</a>
-                    </li>
-                    <?php } else { ?>
-                     <li>
-                        <a class="page-scroll" href="#contact">S'inscrire</a>
-                    </li>  
-                        <li>
-                        <a class="page-scroll" href="../controllers/login.php">S'authentifier</a>
-                    </li>  
-                    <?php } ?>
+                    <li>
+                        <a class="page-scroll" href="../controllers/logout.php">Se déconnecter</a>
+                    </li> 
               
                  </ul>
             </div>
