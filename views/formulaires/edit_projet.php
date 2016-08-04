@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Modifier projet</title>
      <?php  include_once('../views/links.php'); ?> 
 </head>
 <body>
@@ -19,7 +19,7 @@
 <div class="form-group" style="margin-top:150px">
   <label class="col-md-4 control-label" for="textinput"></label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="Nom du projet" class="form-control input-md" required="">
+  <input id="textinput" name="textinput" type="text" placeholder="Titre" class="form-control input-md" required="">
 
   </div>
 </div>
@@ -28,41 +28,20 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput"></label>  
   <div class="col-md-4">
- <input id="textinput" name="textinput" type="text" placeholder="Budget estimé pour la réalisation du projet!" class="form-control input-md" required=""> 
+ <input id="textinput" name="textinput" type="text" placeholder="Budget" class="form-control input-md" required=""> 
 </div>
-    
-  </div>
-</div>
+   </div>
+ 
+
 
 <!-- Textarea -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="description"></label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="description" name="description" placeholder="Description du projet..."></textarea>
+    <textarea class="form-control" id="description" name="description" placeholder="Description"></textarea>
   </div>
 </div>
 
-<!-- Select Basic -->
-<!--<div class="form-group">
-  <label class="col-md-4 control-label" for="selectbasic"></label>
-  <div class="col-md-4">
-    <select id="selectbasic" name="selectbasic" class="form-control">
-      <option value=""></option>
-      <option value="1">Camels Team</option>
-      <option value="2">Rocks Team</option>
-    </select>
-  </div>
-</div>-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="selectbasic"></label>
-  <div class="col-md-4">
-    <select id="selectbasic" name="selectbasic" class="form-control">
-    <option >Votre projet sera soumis par défaut</option>
-      <option value="Soumis" selected="selected">Soumis</option>
-      <option value="non soumis">Non soumis</option>
-    </select>
-  </div>
-</div>
 <div class="form-group">
   <label class="col-md-4 control-label" for="filebutton"></label>
   <div class="col-md-4">

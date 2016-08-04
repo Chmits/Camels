@@ -2,7 +2,7 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Web 4 innovation</title>
+    <title>Inscrire un étudiant</title>
     
     
     <link rel="stylesheet" href="css/normalize.css">
