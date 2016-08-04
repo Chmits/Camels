@@ -3,9 +3,22 @@
 <html>
 <head>
   <title></title>
-     <?php  include_once('../views/links.php'); ?> 
+  
+      
+    <link rel="stylesheet" type="text/css" href="../resources/acceuil_needs/css/normalize.css">
+
+         <link href="../libraries/acceuil_needs/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../libraries/acceuil_needs/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+     <link href="../libraries/acceuil_needs/css/creative.min.css" rel="stylesheet">
+
+<!--          <?php include_once('../views/links2.php'); ?> -->
+<!--          <?php include_once('../views/links.php'); ?> -->
+
 </head>
-<body>
+<body >
+     <?php include_once('../views/header4.php'); ?>
 
 
 <form class="form-horizontal" method="post" action="../controllers/projectInsert.php">
@@ -28,17 +41,16 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput"></label>  
   <div class="col-md-4">
- <input id="textinput" name="budget" type="text" placeholder="Budget estimé pour la réalisation du projet!" class="form-control input-md" required=""> 
+ <input id="textinput" name="budget" type="text" placeholder="Budget estimé pour la réalisation du projet" class="form-control input-md" required=""> 
 </div>
     
   </div>
-</div>
 
 <!-- Textarea -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="description"></label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="description" name="description" placeholder="Description du projet..."></textarea>
+    <textarea class="form-control" id="description" name="description" placeholder="Description du projet"></textarea>
   </div>
 </div>
 
@@ -52,6 +64,7 @@
       <option value="2">Rocks Team</option>
     </select>
   </div>
+
 </div>-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="selectbasic"></label>
@@ -62,7 +75,11 @@
       <option value="non soumis">Non soumis</option>
     </select>
   </div>
+
 </div>
+    
+  </div>
+</div>-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="filebutton"></label>
   <div class="col-md-4">
@@ -78,8 +95,11 @@
   </div>
 </div>
 
-</fieldset>
 </form>
+<footer>
+<?php include_once('../views/footer_view.php'); ?>
+
+</footer>
 
 </body>
 </html>

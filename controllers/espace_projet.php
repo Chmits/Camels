@@ -1,5 +1,6 @@
 <?php
   session_start();
+  $con="ok";
   if( $_SESSION['connected'] == "connected")
   {
 	 include_once('../libraries/php/DAO/projectDAO.php');
@@ -7,6 +8,7 @@
 	 $projectDao = new  ProjectDAO();
 	 $id_association=$_SESSION["id"];
 	 $nom="Espace Projet";
+	 $con="connected";
 
 
 	 if($_SESSION["role"]=="association")
