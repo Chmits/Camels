@@ -26,7 +26,7 @@
                 <div class="row">
                     
                     <div class="col-md-8 col-md-offset-2">
-                        <p class="brand-heading">WEB 4 INNOVATION</p>
+                        <p class="brand-heading">WEB<ok style="color: red;">4</ok>INNOVATION</p>
                         <p class="intro-text">Bienvenue à la terre des opportunités</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>

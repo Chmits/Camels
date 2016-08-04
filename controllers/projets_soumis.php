@@ -7,11 +7,10 @@
 	 $id_association=$_SESSION["id"];
 	 $nom="Projets soumis";
 
-	 if($_SESSION["role"]=="association")
-	 {
+	
 	 	 $result=$projectDao->getProjects_soumis();
 	 	 //var_dump($result);exit();
-	 }
+	 
 	
 	 include_once('../views/espace_projet_view.php');
  }

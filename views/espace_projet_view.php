@@ -52,6 +52,7 @@
 
 
 <?php
+
         $i=0;
         $size=count($result);
         //var_dump($result[1]);
@@ -88,13 +89,14 @@
 
 
 
-                      <button type="submit" class="btn btn-info">+</button>
+                       <?php if($_SESSION['role']=="association") { ?> <button type="submit" class="btn btn-info">+</button><?php  }
+                       ?>
                       </form></td>
                       <td>
                     </form>
                     <form method="post" action="deleteProject.php">
                       <input type="hidden" value="<?php echo $reg->id_project ?>" name="id"></input>
-                      <button type="submit" class="btn btn-danger">x</button>
+                      <?php if($_SESSION['role']=="association") { ?><button type="submit" class="btn btn-danger">x</button><?php  }?>
                     </form>
                     </td>
                     </tr>
@@ -107,6 +109,7 @@
                 }
                 if($i%3 != 0)
                     echo "</div>";
+
                 
                  ?>
                 
