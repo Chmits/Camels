@@ -3,6 +3,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link rel="stylesheet" type="text/css" href="../resources/acceuil_needs/css/normalize.css">
 
     <!-- Bootstrap Core CSS -->
     <link href="../libraries/acceuil_needs/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
