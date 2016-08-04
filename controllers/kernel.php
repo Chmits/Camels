@@ -10,15 +10,15 @@ $ctl= Request::getController();
 //Select the controller
 if(empty($ctl))
 {
-	$ctl = 'login';
+	$ctl = 'acceuil';
 }
 
 //Redirect
-if(!file_exists('controllers/'.$ctl.'.php'))
+if(!file_exists('Camels/controllers/'.$ctl.'.php'))
 {
-	$ctl = 'login';
+	$ctl = 'acceuil';
 }
-	include('controllers/'.$ctl.'.php');
+	include('Camels/controllers/'.$ctl.'.php');
 
 
  ?>

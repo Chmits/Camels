@@ -19,16 +19,20 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a  class="page-scroll" href="../controllers/acceuil.php">Accueil</a>
+                        <a  class="page-scroll" href="#page-top">Accueil</a>
                     </li>
                  
                     <li>
-                        <a class="page-scroll" href="../controllers/profil.php">Profil</a>
+                        <a class="page-scroll" href="#about">Qui sommes-nous</a>
                     </li>
                     
                                         <li>
-                        <a class="page-scroll" href="../controllers/logout.php">Se deconnecter</a>
-                    </li>   
+                        <a class="page-scroll" href="#partenaires">Nos partenaires</a>
+                    </li>   <li>
+                        <a class="page-scroll" href="#contact">S'inscrire</a>
+                    </li>    <li>
+                        <a class="page-scroll" href="../controllers/login.php">S'authentifier</a>
+                    </li>  
               
                  </ul>
             </div>

@@ -11,9 +11,9 @@
   	$resume=$_POST["resume"];
   	$status=$_POST["status"];
   	$document=$_POST["document"];
-    echo "$id</br>";
-  	echo "title=$title<br/>id_team=$id_team<br/>id_association_sw=$id_association_sw<br/>budget=$budget<br/>status=$status<br/><br/>resume=$resume<br/>document=$document";
-    //include_once('../libraries/php/DAO/projectDAO.php');
+    include_once('../views/show_project.php');
+
+
   }
    else
     header('Location:  ../index.php');      

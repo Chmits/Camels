@@ -69,7 +69,7 @@ class Db
 
 	    	if(empty($sql)) return false;
 			try{
-				echo "i'am here! and : $sql";
+				
 				$count =self::$dbh->exec($sql);
 				echo "$count";
 
@@ -79,6 +79,22 @@ class Db
 				echo "Error !!".$ex->getMessage();
 				return false;
 			}
+	    }
+	    public static function ajoutEtudiant($sql)
+	    { 
+	    	if(empty($sql)) return false;
+			try{
+				
+				$count =self::$dbh->exec($sql);
+				echo "$count";
+
+			   }
+			catch(PDOException $ex)
+			{
+				echo "Error !!".$ex->getMessage();
+				return false;
+			}
+
 	    }
 
 

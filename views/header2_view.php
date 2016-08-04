@@ -1,6 +1,5 @@
-   
    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" >
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -23,12 +22,18 @@
                     </li>
                  
                     <li>
-                        <a class="page-scroll" href="../controllers/profil.php">Profil</a>
+                        <a class="page-scroll" href="../controllers/espace_projet.php">Espace projets</a>
                     </li>
                     
-                                        <li>
-                        <a class="page-scroll" href="../controllers/logout.php">Se deconnecter</a>
+                   <li>
+                        <a class="page-scroll" href=""></a>
+                    </li>      
+                      <li>
+                        <a class="page-scroll" href="../controllers/projInsert.php">Soumettre un projet</a>
                     </li>   
+                    <li>
+                        <a class="page-scroll" href="../controllers/logout.php">Se déconnecter</a>
+                    </li> 
               
                  </ul>
             </div>

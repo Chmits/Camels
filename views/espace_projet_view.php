@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Espace Projet</title>
+    <title><?php echo $nom ?></title>
 
     
 
@@ -26,6 +25,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
        <?php  include_once('../views/links.php'); ?>
+       <?php  include_once('../views/links2.php'); ?>
+
+
 
 </head>
 
@@ -41,8 +43,8 @@
         <!-- Page Header -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Espace Projet
-                    <strong><?php if(isset($_SESSION["username"])) echo $_SESSION["username"]; ?></strong>
+                <h1 class="page-header"><?php echo $nom ?>
+                    <strong><?php if(isset($_SESSION["username"]) && $_SESSION["role"]=="association") echo $_SESSION["username"]; ?></strong>
                 </h1>
             </div>
         </div>
@@ -92,74 +94,27 @@
                     </form>
                     <form method="post" action="deleteProject.php">
                       <input type="hidden" value="<?php echo $reg->id_project ?>" name="id"></input>
-                      <button type="submit" class="btn btn-danger"">x</button>
+                      <button type="submit" class="btn btn-danger">x</button>
                     </form>
                     </td>
                     </tr>
                     </table>
                    
                     <?php
-                    echo "</div>";    
-
-                   
-
+                    echo "</div>";   
               if($i%3 == 0)
-            echo "</div>";
-        }
-        if($i%3 != 0)
-            echo "</div>";
-        
- ?>
-        
-
-
-    </div>
-        <!-- /.row -->
-
-
-        <!-- Projects Row -->
-
-       <!-- <div class="row">
-            <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="../resources/images/prj1.jpg" alt="" style="width: 400px;height: 160px">
-                </a>
-                <h3>
-                    <a href="project_show.php?id=1">Project Symphony</a>
-                </h3>
-                <p>Introduction. Le framework symfony est un projet Open-Source depuis plus de 3 ans. Il est devenu l'un des plus populaire framework PHP grâce à ses ...</p>
-             <a href="#" class="btn btn-primary btn-xl page-scroll">Plus d'informatio !</a>
-
-            </div>
-
-            <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="../resources/images/prj2.jpg" alt="" style="width: 400px;height: 160px">
-                </a>
-                <h3>
-                    <a href="#">Project Android</a>
-                </h3>
-                <p>Ce projet a pour but de présenter Android Studio, le nouvel IDE de Google, mais pas seulement. On verra comment l'installer, le configurer et créer un premier ...</p>
-            </div>
-            <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="../resources/images/prj3.jpg" alt="" style="width: 400px;height: 160px">
-                </a>
-                <h3>
-                    <a href="#">Project Java Desktop</a>
-                </h3>
-                <p>Ce projet a pour but de présenter Android Studio, le nouvel IDE de Google, mais pas seulement. On verra comment l'installer, le configurer et créer un premier ...</p>
-            </div>
-        </div>
-   
-
-
-
-
-        -->
-
+                    echo "</div>";
+                }
+                if($i%3 != 0)
+                    echo "</div>";
+                
+                 ?>
+                
+</div>
     
         <?php  include_once('../views/footer_view.php'); ?>
+        <?php  include_once('../views/script1.php'); ?>
+
     <!-- /.container -->
 
     <!-- jQuery -->

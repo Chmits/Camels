@@ -6,6 +6,8 @@
 	 //include_once('../views/footer_view.php'); 
 	 $projectDao = new  ProjectDAO();
 	 $id_association=$_SESSION["id"];
+	 $nom="Espace Projet";
+
 
 	 if($_SESSION["role"]=="association")
 	 {

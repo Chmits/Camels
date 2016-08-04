@@ -44,13 +44,13 @@
 	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="../resources/CSS/animate.css">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="../resources/CSS/icomoon.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="../resources/CSS/bootstrap.css">
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../resources/CSS/style.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -60,7 +60,7 @@
 	<![endif]-->
 
 	</head>
-	<body style="background-image: url(images/bg_img.jpg);">
+	<body style="background-image: url(../resources/images/bg_img.jpg);">
 	
 	<div id="fh5co-main">
 		<div class="fh5co-tab-wrap">
@@ -70,27 +70,27 @@
 				<li><a href="#" data-tab="3"><span class="icon icon-black-tie"></span><span class="menu-text">Modifier</span></a></li>
 				<li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text1">Supprimer Projet</span></a></li>
 			</ul>
+			
 			<div class="fh5co-tab-content active" data-content="1">
 				<div class="fh5co-content-inner text-center">
 					<div class="row row-bottom-padded-sm">
 						<div class="col-md-12">
 							<figure>
-								<img src="images/profile_img.png" alt="Free HTML5 Wesbite Template by FreeHTML5.co">
+								<img src="../resources/images/web4innovation.png" style="width: 150px;height: 150px;" alt="Free HTML5 Wesbite Template by FreeHTML5.co">
 							</figure>
-							<h1> Projet </h1>
-							<p>Born and raised in <a href="#">Brooklyn</a>. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the <a href="#">Semantics</a>, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
-							<p>Born and raised in <a href="#">Brooklyn</a>. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the <a href="#">Semantics</a>, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+							<h1> <?php echo $title ?> </h1>
+							<p> <?php echo $resume ?> </p>
 						</div>
 					</div>
-					<div class="row">
+					<!--<div class="row">
 						<div class="col-md-12 fh5co-counter">
-							<div class="fh5co-number fh5co-left">10</div>
+							<div class="fh5co-number fh5co-left">1</div>
 							<div class="fh5co-text">
 								<h3 class="border-bottom">Years of experience in Web Design</h3>
 								<p>Far far away, behind the word mountains, far from the countries.</p>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<ul class="fh5co-social">
 						<li><a href="#"><i class="icon-envelope"></i></a></li>
 						<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -104,15 +104,28 @@
 				<div class="fh5co-content-inner">
 					<div class="row">
 						<div class="col-md-12">
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p>Listes des condidatures pour ce projet:</p>
 
 							<div class="fh5co-feature">
 								<div class="fh5co-icon">
 									<i class="icon-graduation-cap"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>2001-2004</h2>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
+								<table>
+									<tr>
+									<td>
+		  							<h2>26 Mai 2016</h2>
+									    <p>Team Name : Camels</p>
+									  
+									</td>
+									<!--<td>
+							            <button type="submit" class="btn btn-info">+</button>
+									</td> -->
+
+									</tr>
+								</table>
+									
+
 								</div>
 							</div>
 
@@ -121,20 +134,23 @@
 									<i class="icon-graduation-cap"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>2004-2008</h2>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
+									<table>
+									<tr>
+									<td>
+										<h2>29 Juin 2016</h2>
+									    <p>Team Name : Rocks</p>
+									</td>
+									<!--<td>
+							            <button type="submit" class="btn btn-info">+</button>
+									</td>-->
+
+									</tr>
+								</table>
+
 								</div>
 							</div>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-graduation-cap"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>2008-2012</h2>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
-								</div>
-							</div>
+				
 
 						</div>
 						
@@ -145,7 +161,6 @@
 				<div class="fh5co-content-inner">
 					<div class="row">
 						<div class="col-md-12">
-
 							<p>I have the privilege to work with these cool companies.</p>
 
 							<div class="fh5co-feature">
@@ -229,17 +244,17 @@
 	</div>
 	
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="../resources/js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="../resources/js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="../resources/js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="../resources/js/jquery.waypoints.min.js"></script>
 	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
+	<script src="../resources/js/jquery.easypiechart.min.js"></script>
 	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
+	<script src="../resources/js/main.js"></script>
 
 	</body>
 </html>
