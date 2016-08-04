@@ -32,6 +32,7 @@
 </head>
 
 <body id="page-top" >
+            <?php include_once('../views/header_view.php');?>
 
     <!-- Navigation -->
     <?php  include_once('../views/header5_view.php'); ?>

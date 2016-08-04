@@ -1,5 +1,6 @@
 <?php
  include_once('../libraries/php/DAO/t_login.Class.php');
+ $con=" ";
 //get username and password
 $username=$_POST['username'];
 $password=md5($_POST['password']);
@@ -8,12 +9,16 @@ $obj= new t_login_DAO();
 session_start();
 if( $_SESSION['connected'] == "connected")
   {
+       $con="connected";
 
       header('Location: ../controllers/profil.php');   
   }
 else if($obj->authentifiate($username,$password))
 {
+
 	session_start();
+         $con="connected";
+
 	  $_SESSION["username"] = $username;
     $_SESSION['connected'] = "connected";
     $list= $obj->role($username,$password);

@@ -12,7 +12,8 @@
   	$resume=$_POST["resume"];
   	$status=$_POST["status"];
   	$document=$_POST["document"];
-    //include_once('../views/show_project.php');
+
+    include_once('../views/show_project/show_project.php');
 
   }
    else
