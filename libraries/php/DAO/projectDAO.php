@@ -6,7 +6,8 @@ class projectDAO {
 
 	public static function insertProject($id_association_sw=0,$id_team=0,$budget=0,$title=0,$document=0,$resume=0,$statut=0){
 
-		$sql="INSERT INTO t_project (`id_association_sw`, `id_team`, `budget`, `title`, `document`,`resume`, `status`) VALUES ($id_association_sw,$id_team,$budget, '$title', '$resume', '$document', 'status')";
+		$sql="INSERT INTO t_project (`id_association_sw`, `id_team`, `budget`, `title`, `document`,`resume`, `status`) 
+		VALUES ($id_association_sw,$id_team,$budget, '$title', '$resume', '$document', 'status');";
 		Db::open();
 		Db::insertQuery($sql);
 		Db::close();

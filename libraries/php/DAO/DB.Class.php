@@ -43,7 +43,9 @@ class Db
 			
 			try
 			{
-				self::$PDO->exec($sql);
+				echo "$sql";
+				self::$dbh->exec($sql);
+
 				return self::$dbh->lastInsertID();
 			}catch(PDOException $ex)
 			{

@@ -56,7 +56,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="selectbasic"></label>
   <div class="col-md-4">
-    <select id="selectbasic" name="selectbasic" class="form-control">
+    <select id="selectbasic" name="soumis" class="form-control">
     <option >Votre projet sera soumis par défaut</option>
       <option value="Soumis" selected="selected">Soumis</option>
       <option value="non soumis">Non soumis</option>
@@ -66,7 +66,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="filebutton"></label>
   <div class="col-md-4">
-    <input id="filebutton" name="filebutton" class="input-file" type="file">
+    <input id="filebutton" name="document" class="input-file" type="file">
   </div>
 </div>
 <!-- Button (Double) -->
