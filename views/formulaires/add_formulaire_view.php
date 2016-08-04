@@ -55,14 +55,6 @@
 </div>
 
 
-<<<<<<< HEAD
-</div>-->
-
-    
-  </div>
-</div>-->
-=======
->>>>>>> c2b04ba4b44946b17515466d066f605c0a743915
 <div class="form-group">
   <label class="col-md-4 control-label" for="filebutton"></label>
   <div class="col-md-4">
@@ -92,10 +84,10 @@
           f();
 
   </script>
-<footer>
-<?php include_once('../views/footer_view.php'); ?>
+<!-- <footer>
+<?php //include_once('../views/footer_view.php'); ?>
 
-</footer>
+</footer>-->
 
 </body>
 </html>

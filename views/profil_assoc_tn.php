@@ -57,7 +57,7 @@
 			<div class="row white">
 			<br>
 			<h1 class="centered"><?php echo "$title"; ?></h1>
-			<CENTER> <IMG SRC=" <?php if($id_association == 1){?> ../resources/images/logos/ensi.png<?php }?>"/> </center>
+			<CENTER> <IMG style="height: 150px; width: 250px;" SRC=" <?php if($id_association == 1){?> ../resources/images/logos/ensi.png<?php }else if($id_association == 2){?> ../resources/images/logos/eniso.png<?php } else if($id_association == 3){?> ../resources/images/logos/logo.jpg<?php } ?>"/> </center>
 				<h1 class="centered">A propos notre association </h1>
 				<hr>
 				

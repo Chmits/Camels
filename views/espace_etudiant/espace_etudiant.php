@@ -63,7 +63,7 @@ img.img-responsive
 
             <div class="col-lg-4 col-sm-6 text-center">
                 <img class="img-circle img-responsive img-center"  width ="200 px" src="../views/espace_etudiant/fonts/avatar.jpg" alt="">
-                <a href="#"><h3 style="padding-left: 0%">Saidi Bacem</h3> </a>
+                <a href="#"><h3 style="padding-left: 0%">Wafa Mribah</h3> </a>
                 <p>specialité</p>
             </div>
 
@@ -110,15 +110,14 @@ img.img-responsive
             </div>
         </div>
 
-        <hr>
  
 
 
         <!-- Footer -->
-       
+         </div>
    <?php include_once('../views/footer_view.php') ?>
 
-    </div>
+  
     <!-- /.container -->
    <?php include_once('../views/script1.php') ?>
 
