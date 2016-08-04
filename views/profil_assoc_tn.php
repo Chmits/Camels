@@ -7,7 +7,8 @@
     <meta name="author" content="Carlos Alvarez - Alvarez.is - blacktie.co">
     <link rel="shortcut icon" href="../resources/profil_needs/assets/ico/favicon.png">
 
-    <title> SHIELD - Free Bootstrap 3 Theme</title>
+    <title>
+    	Profil association Tunisienne</title>
     <?php  include_once('../views/links2.php'); ?>
 
 

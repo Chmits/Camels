@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Soummetre projet</title>
   
       
     <link rel="stylesheet" type="text/css" href="../resources/acceuil_needs/css/normalize.css">
@@ -32,7 +32,7 @@
 <div class="form-group" style="margin-top:150px">
   <label class="col-md-4 control-label" for="textinput"></label>  
   <div class="col-md-4">
-  <input id="textinput" name="title" type="text" placeholder="Nom du projet" class="form-control input-md" required="">
+  <input id="textinput" name="title" type="text" placeholder="Titre" class="form-control input-md" required="">
 
   </div>
 </div>
@@ -41,7 +41,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput"></label>  
   <div class="col-md-4">
- <input id="textinput" name="budget" type="text" placeholder="Budget estimé pour la réalisation du projet" class="form-control input-md" required=""> 
+ <input id="textinput" name="budget" type="text" placeholder="Budget" class="form-control input-md" required=""> 
 </div>
     
   </div>
@@ -50,26 +50,19 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="description"></label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="description" name="description" placeholder="Description du projet"></textarea>
+    <textarea class="form-control" id="description" name="description" placeholder="Description"></textarea>
   </div>
 </div>
 
-<!-- Select Basic -->
-<!--<div class="form-group">
-  <label class="col-md-4 control-label" for="selectbasic"></label>
-  <div class="col-md-4">
-    <select id="selectbasic" name="selectbasic" class="form-control">
-      <option value=""></option>
-      <option value="1">Camels Team</option>
-      <option value="2">Rocks Team</option>
-    </select>
-  </div>
 
+<<<<<<< HEAD
 </div>-->
 
     
   </div>
 </div>-->
+=======
+>>>>>>> c2b04ba4b44946b17515466d066f605c0a743915
 <div class="form-group">
   <label class="col-md-4 control-label" for="filebutton"></label>
   <div class="col-md-4">
