@@ -31,6 +31,9 @@
                     </li>   
                     <?php if( $con == "connected")
                             {  ?>
+                             <li>
+                        <a class="page-scroll" href="../controllers/profil.php">Profil</a>
+                    </li>
                             <li>
                         <a class="page-scroll" href="../controllers/logout.php">Se deconnecter</a>
                     </li>
